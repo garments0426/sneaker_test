@@ -71,7 +71,7 @@ def web_analysis(self):
 
 #-----資料保存在sql函式---- 有問題
 def database(data_list):
-    conn = pymysql.connect(host = 'localhost',port = 3306,user = 'root',password = 'nuger2568er',db = 'text',charset = 'utf8',)
+    conn = pymysql.connect(host = 'localhost',port = 3306,user = 'root',password = '',db = 'text',charset = 'utf8',)
     print('mysql connect OK!!')
     with conn.cursor() as cursor:
         CreateDate = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
